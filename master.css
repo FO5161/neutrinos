@@ -1,4 +1,52 @@
-table, th, td{
-    width:: 100%;
-    border: 1px solid black;
+/*This is the Styling for the Tables Section*/
+table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            /*Causes the 2nd border to dissappear*/
+        }
+
+        th,
+        td {
+            padding: 15px;
+            /*causes the border to expand or decline making more or less space within each block*/
+        }
+
+        th {
+            text-align: left;
+            /*Aligns all text*/
+        }
+
+        table {
+            border-spacing: 5px;
+            /*Will increase the space between borders but only if the border is not collapsed*/
+        }
+/*Styles the Entire Table as specified*/
+        table#t01 {
+            width: 100%; 
+             background-color: #f0dcdc;
+        } 
+/*Styles the even number blocks wihtin a table*/
+        table#t01 tr:nth-child(even) {
+            background-color: rgba(235, 5, 196, 0.226);
+       }
+/*Styles the odd number blocks in a table*/       
+        table#t01 tr:nth-child(odd) {
+            background-color: rgb(235, 8, 216);
+       }
+/*Styles the first block in a table as specified*/       
+        table#t01 th {
+           color: white;
+           background-color: black;
+       } 
+/*Styling for the IFRAME*/
+#Iframe_1{
+    border: 2px solid red;
+    height: 900px;
+    width: 100%;
 }
+
+
+
+

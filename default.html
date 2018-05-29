@@ -1,53 +1,155 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>Page Title</title>
+    <meta charset="UTF-8" />
+    <title>Page Title</title>
+    <link rel="stylesheet" href="master.css">
 </head>
+
 <body>
 
-<h1>My First Heading</h1>
-<p>My first paragraph.</p>
+    <h1>My First Heading</h1>
+    <p>My first paragraph.</p>
+<!--This Part covers Forms-->
+    <form>
+        First Name:
+        <br>
+        <input type="text" Name="First Name">
+        <br> Last Name:
+        <br>
+        <input type="text" Name="Last Name">
+        <br>
+    </form>
+    <br>
 
-<form>
-First Name:<br>
-<input type="text" Name="First Name"><br>
-Last Name:<br>
-<input type="text" Name="Last Name"><br>
-</form><br>
+    <form>
+        <input type="radio" name="Gender" value="Male" checked>Male
+        <br>
+        <input type="radio" name="Gender" value="Female">Female
+        <br>
+        <input type="radio" name="Gender" value="Other">Other
+        <br>
+    </form>
+    <br>
 
-<form>
-<input type="radio" name="Gender" value="Male" checked>Male<br>
-<input type="radio" name="Gender" value="Female">Female<br>
-<input type="radio" name="Gender" value="Other">Other<br>
-</form><br>
-
-<form action="/README.md" method="GET" target="_blank">
-    <fieldset>
-    <legend>Personal Details</legend>
-    First Name:<br>
-    <input type="text" name=FirstName value="Duane"><br>
-    <input type="text" name=Lastname value="Fourie"><br>
-    <input type="submit" value="submit">
-    </fieldset>
-</form><br>
-
-<table>
+    <form action="/README.md" method="GET" target="_blank">
+        <fieldset>
+            <legend>Personal Details</legend>
+            First Name:
+            <br>
+            <input type="text" name=FirstName value="Duane">
+            <br>
+            <input type="text" name=Lastname value="Fourie">
+            <br>
+            <input type="submit" value="submit">
+        </fieldset>
+    </form>
+    <br>
+<!--This Part Covers Tables-->
+    <table style="width:100%">
         <tr>
-          <th>Firstname</th>
-           <th>Lastname</th> 
-          <th>Age</th>
-         </tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Age</th>
+        </tr>
         <tr>
-          <td>Duane</td>
-           <td>Fourie</td> 
-          <td>27</td>
-         </tr>
+            <td>Duane</td>
+            <td>Fourie</td>
+            <td>27</td>
+        </tr>
         <tr>
-          <td>Loule</td>
-           <td>Fourie</td> 
-          <td>25</td>
-         </tr>
-      </table> 
+            <td>Loule</td>
+            <td>Fourie</td>
+            <td>25</td>
+        </tr>
+    </table>
+    <br>
+    <table style="width:100%">
+        <tr>
+            <th>Name</th>
+            <th colspan="3">Telephone</th>
+            <!--To make a cell span more than one column, use the colspan attribute-->
+        </tr>
+        <tr>
+            <td>Duane Fourie</td>
+            <td>0829444344</td>
+            <td>0617727053</td>
+            <td>0123300391</td>
+        </tr>
+    </table>
+    <br>
+    <table style="width:100%">
+        <tr>
+            <th>Name:</th>
+            <td>Duane Fourie</td>
+        </tr>
+        <tr>
+            <th rowspan="3">Telephone:</th>
+            <!--To make a cell span more than one row, use the rowspan attribute:-->
+            <td>0829444344</td>
+        </tr>
+        <tr>
+            <td>0617727053</td>
+        </tr>
+        <tr>
+            <td>0123300391</td>
+        </tr>
+    </table>
+    <br>
+    <table style="width:100%">
+        <caption>Monthly savings</caption>
+        <!--To add a caption to a table, use the caption tag:-->
+        <tr>
+            <th>Month</th>
+            <th>Savings</th>
+        </tr>
+        <tr>
+            <td>January</td>
+            <td>R100</td>
+        </tr>
+        <tr>
+            <td>February</td>
+            <td>R50</td>
+        </tr>
+        <tr>
+            <td>March</td>
+            <td>R250</td>
+        </tr>
+    </table>
+    <br>
+    <hr>
 
+    <table id="t01">
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td>94</td>
+        </tr>
+        <tr>
+            <td>Duane</td>
+            <td>Fourie</td>
+            <td>27</td>
+        </tr>
+        <tr>
+            <td>Loule</td>
+            <td>Fourie</td>
+            <td>25</td>
+        </tr>
+    </table>
+    <br>
+<!--This Part Covers Iframes -->
+
+<iframe src="iFrame.html" name="Iframe_1" id="Iframe_1" target="_blank"></iframe>
+<a href="https://www.youtube.com/embed/WMo6QJnjrk4?autoplay=1" target="Iframe_1">My Repository</a>
+
+<!--Cheeze's Iframe: <iframe frameborder="1" src="Page1.html" name="iframe_a" id="iframe_a" height="100%" width="100%"></iframe><br>
+-->
 </body>
-</html> 
+
+</html>
