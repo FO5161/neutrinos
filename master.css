@@ -1,52 +1,106 @@
 /*This is the Styling for the Tables Section*/
+
+h1 {
+    font-size: 10vw;
+    /*Responsive Font Size- Resize the browser window to see how the font size scales. */
+    font-style: oblique;
+    text-decoration: underline;
+    text-align: center;
+    text-shadow: 3px 2px red;
+   }
+
+   .FixedPosition{
+    font-size: 25px; 
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 300px;
+    border: 3px;
+    text-shadow: 4px 3px greenyellow;
+    color: blue;
+   }
+
 table,
-        th,
-        td {
-            border: 1px solid black;
-            border-collapse: collapse;
-            /*Causes the 2nd border to dissappear*/
-        }
-
-        th,
-        td {
-            padding: 15px;
-            /*causes the border to expand or decline making more or less space within each block*/
-        }
-
-        th {
-            text-align: left;
-            /*Aligns all text*/
-        }
-
-        table {
-            border-spacing: 5px;
-            /*Will increase the space between borders but only if the border is not collapsed*/
-        }
-/*Styles the Entire Table as specified*/
-        table#t01 {
-            width: 100%; 
-             background-color: #f0dcdc;
-        } 
-/*Styles the even number blocks wihtin a table*/
-        table#t01 tr:nth-child(even) {
-            background-color: rgba(235, 5, 196, 0.226);
-       }
-/*Styles the odd number blocks in a table*/       
-        table#t01 tr:nth-child(odd) {
-            background-color: rgb(235, 8, 216);
-       }
-/*Styles the first block in a table as specified*/       
-        table#t01 th {
-           color: white;
-           background-color: black;
-       } 
-/*Styling for the IFRAME*/
-#Iframe_1{
-    border: 2px solid red;
-    height: 900px;
-    width: 100%;
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    /*Causes the 2nd border to dissappear*/
 }
 
+th,
+td {
+    padding: 15px;
+    /*causes the border to expand or decline making more or less space within each block*/
+}
 
+th {
+    text-align: left;
+    /*Aligns all text*/
+}
 
+table {
+    border-spacing: 5px;
+    /*Will increase the space between borders but only if the border is not collapsed*/
+}
 
+/*Styles the Entire Table as specified*/
+
+table#t01 {
+    width: 100%;
+    background-color: #f0dcdc;
+}
+
+/*Styles the even number blocks wihtin a table*/
+
+table#t01 tr:nth-child(even) {
+    background-color: rgba(235, 5, 196, 0.226);
+}
+
+/*Styles the odd number blocks in a table*/
+
+table#t01 tr:nth-child(odd) {
+    background-color: rgb(235, 8, 216);
+}
+
+/*Styles the first block in a table as specified*/
+
+table#t01 th {
+    color: white;
+    background-color: black;
+}
+
+/*Styling for the IFRAME*/
+
+#Iframe_1 {
+    /* border: 2px solid red; */
+    width: 98%;
+    border: 25px double red;
+    height: 900px;
+        
+}
+
+.container {
+    position: relative;
+}
+
+.topleft {
+    /*TOP LEFT*/
+  /*  position: absolute;
+    top: 8px;    
+    left: 16px;
+    font-size: 18px;*/
+    /*Centered*/
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+}
+
+img { 
+    width: 100%;
+    height: auto;
+    opacity: 0.3;
+}
