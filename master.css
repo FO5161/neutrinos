@@ -104,3 +104,68 @@ img {
     height: auto;
     opacity: 0.3;
 }
+
+/*CSS Pseudo-classes*/
+/*
+Note: a:hover MUST come after a:link and a:visited in the CSS definition in order to be 
+effective! a:active MUST come after a:hover in the CSS definition in order to be 
+effective!
+*/
+
+/* unvisited link */
+a:link {
+    color: red;
+}
+
+/* visited link */
+a:visited {
+    color: green;
+}
+
+/* mouse over link */
+a:hover {
+    color: hotpink;
+}
+
+/* selected link */
+a:active {
+    color: blue;
+}
+
+/*Using Hover on a DIV*/
+/*This doesnt look nice with what i have done*/
+/*div {
+    background-color: green;
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
+div:hover {
+    background-color: blue;
+}*/
+/*Hover over a <div> element to show a <p> element (like a tooltip):*/
+/*div:hover p {
+    display: block;
+}*/
+/*2nd Page*/
+/*The :first-child pseudo-class matches a specified element 
+that is the first child of another element.*/
+#Pseudo p:first-child {
+    color: blue;
+} 
+
+/*In the following example, the selector matches the first <i> element in all <p> elements*/
+#I p i:first-child {
+    color: blue;
+} 
+
+#B p:first-child i {
+    color: blue;
+} 
+
+/*The :lang pseudo-class allows you to define special rules for different languages.
+In the example below, :lang defines the quotation marks for <q> elements with lang="no":
+*/
+#D q:lang(no) {
+    quotes: "~" "~";
+}
