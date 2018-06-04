@@ -7,10 +7,10 @@ h1 {
     text-decoration: underline;
     text-align: center;
     text-shadow: 3px 2px red;
-   }
+}
 
-   .FixedPosition{
-    font-size: 25px; 
+.FixedPosition {
+    font-size: 25px;
     position: fixed;
     bottom: 0;
     right: 0;
@@ -18,7 +18,7 @@ h1 {
     border: 3px;
     text-shadow: 4px 3px greenyellow;
     color: blue;
-   }
+}
 
 table,
 th,
@@ -77,7 +77,6 @@ table#t01 th {
     width: 98%;
     border: 25px double red;
     height: 900px;
-        
 }
 
 .container {
@@ -86,7 +85,7 @@ table#t01 th {
 
 .topleft {
     /*TOP LEFT*/
-  /*  position: absolute;
+    /*  position: absolute;
     top: 8px;    
     left: 16px;
     font-size: 18px;*/
@@ -99,13 +98,14 @@ table#t01 th {
     font-size: 18px;
 }
 
-img { 
+img {
     width: 100%;
     height: auto;
     opacity: 0.3;
 }
 
 /*CSS Pseudo-classes*/
+
 /*
 Note: a:hover MUST come after a:link and a:visited in the CSS definition in order to be 
 effective! a:active MUST come after a:hover in the CSS definition in order to be 
@@ -113,27 +113,33 @@ effective!
 */
 
 /* unvisited link */
+
 a:link {
     color: red;
 }
 
 /* visited link */
+
 a:visited {
     color: green;
 }
 
 /* mouse over link */
+
 a:hover {
     color: hotpink;
 }
 
 /* selected link */
+
 a:active {
     color: blue;
 }
 
 /*Using Hover on a DIV*/
+
 /*This doesnt look nice with what i have done*/
+
 /*div {
     background-color: green;
     color: white;
@@ -143,29 +149,80 @@ a:active {
 div:hover {
     background-color: blue;
 }*/
+
 /*Hover over a <div> element to show a <p> element (like a tooltip):*/
+
 /*div:hover p {
     display: block;
 }*/
+
 /*2nd Page*/
+
 /*The :first-child pseudo-class matches a specified element 
 that is the first child of another element.*/
+
 #Pseudo p:first-child {
     color: blue;
-} 
+}
 
 /*In the following example, the selector matches the first <i> element in all <p> elements*/
+
 #I p i:first-child {
     color: blue;
-} 
+}
 
 #B p:first-child i {
     color: blue;
-} 
+}
 
 /*The :lang pseudo-class allows you to define special rules for different languages.
 In the example below, :lang defines the quotation marks for <q> elements with lang="no":
 */
+
 #D q:lang(no) {
     quotes: "~" "~";
+}
+
+#A,
+#B {
+    background: rgb(247, 4, 4);
+}
+
+#content {
+    width: 400px;
+    background: #fff;
+    padding: 20px;
+    padding-top: 0;
+    font-family: calibri;
+    font-size: 18px;
+    color: #444;
+    margin: 0 auto;
+    max-height: 250px;
+    overflow: hidden;
+    /*Set Transitions Up*/
+    -webkit-transition: max-height 0.7s;
+    -moz-transition: max-height 0.7s;
+    transition: max-height 0.7s;
+}
+
+#content.open {
+    max-height: 1000px;
+    /*Set Transitions Up*/
+    -webkit-transition: max-height 0.7s;
+    -moz-transition: max-height 0.7s;
+    transition: max-height 0.7s;
+}
+
+#show-more {
+    background: #1594e5;
+    color: #fff;
+    font-family: calibri;
+    display: block;
+    width: 140px;
+    font-size: 24px;
+    text-transform: uppercase;
+    padding: 10px;
+    text-align: center;
+    margin: 20px auto;
+    cursor: pointer;
 }
