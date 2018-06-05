@@ -298,20 +298,3 @@ colourChanger.onclick = function () {
     colourChanger.innerHTML = "Timer Stopped";
 
 };*/
-
-//Validation Script
-
-var myForm = document.forms.myForm;
-var message = document.getElementById("message");
-
-myForm.onsubmit = function(){
-    if(myForm.name.value == ""){
-        message.innerHTML = "Please enter your Name";
-        return false;
-    } else{
-        message.innerHTML = "";
-        return true;
-    }
-};
-
-
